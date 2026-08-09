@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f1e8">
+  <title>Amber Beauty — премиум-студия волос · Ксения Сердюкова · Калининград</title>
+  <meta name="description"
+    content="Amber Beauty — премиальная студия ухода за волосами в Рыбной деревне, Калининград. Стрижки, укладки и окрашивание от стилиста Ксении Сердюковой. Онлайн-запись.">
+
+  <!-- Шрифты: лого/герой — Bodoni Moda (fashion-serif), заголовки — Cormorant Garamond, текст — Jost -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400;1,6..96,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+  </style>
+</head>
+
+<body>
+
+  <!-- ФОНОВЫЙ ДЕКОР -->
+  <div class="bg-layer" aria-hidden="true">
+    <span class="blob b1" data-parallax="0.06"></span>
+    <span class="blob b2" data-parallax="-0.05"></span>
+    <span class="blob b3" data-parallax="0.04"></span>
+    <!-- Силуэт Кёнигсбергского собора (Рыбная деревня) -->
+    <!-- Силуэт Кёнигсбергского собора (Рыбная деревня) -->
+    <svg class="cathedral" viewBox="0 0 600 260" fill="none" data-parallax="0.03" aria-hidden="true">
+      <path d="M0 258 H600
+           M60 258 V150 M60 150 L95 150 M106 150 V258
+           M78 150 V95 L92 78 L106 95 V150
+           M150 258 V120 L150 120 Q150 92 178 92 Q206 92 206 120 V258
+           M178 92 V60 M168 70 H188
+           M250 258 V80 L300 30 L350 80 V258
+           M300 30 V6 M292 16 H308
+           M300 80 Q300 120 340 120 M300 80 Q300 120 260 120
+           M400 258 V120 Q400 92 428 92 Q456 92 456 120 V258
+           M428 92 V60 M418 70 H438
+           M510 258 V150 L544 150 M555 150 V258
+           M527 150 V95 L541 78 L555 95 V150" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+  </div>
+  <div class="bg-noise" aria-hidden="true"></div>
+
+  <!-- боковой декор для широких экранов (≥1360px) — заполняет пустые поля -->
+  <div class="side-rail left" aria-hidden="true"><span class="gem"></span><span class="v-text">Amber Beauty · студия
+      красоты</span></div>
+  <div class="side-rail right" aria-hidden="true"><span class="gem"></span><span class="v-text">Рыбная деревня ·
+      Калининград</span></div>
+
+  <!-- ПРОГРЕСС СКРОЛЛА -->
+  <div class="scroll-progress" id="progress" aria-hidden="true"></div>
+
+  <!-- ШАПКА -->
+  <header class="site-header" id="header">
+    <!-- логотип-заглушка: клик = наверх -->
+    <button class="logo" id="logo" aria-label="Наверх — Amber Beauty">
+      <span class="logo-name">Amber</span>
+      <span class="logo-sub">Beauty studio</span>
+      <span class="logo-hint">логотип · 200×150</span>
+    </button>
+
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a href="#about" class="nav-link">О нас</a>
+      <a href="#works" class="nav-link">Работы</a>
+      <a href="#services" class="nav-link">Услуги</a>
+      <a href="#masters" class="nav-link">Мастера</a>
+      <button class="btn-book" id="openBooking" aria-haspopup="dialog">
+        <span class="dot"></span><span>Запись</span>
+      </button>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"
+      aria-controls="nav"><span></span></button>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero container" id="top">
+      <div class="hero-top">
+        <div>
+          <p class="hero-kicker" data-reveal>Рыбная деревня · Калининград</p>
+          <h1 data-reveal>
+            <span class="amber">Amber</span>
+            <span class="thin">Beauty</span>
+          </h1>
+          <p class="hero-sub" data-reveal data-delay="1">
+            Премиальная студия ухода за волосами на берегу Преголи, с видом на Кафедральный
+            собор. Стрижки, укладки и окрашивание авторского уровня от стилиста Ксении Сердюковой.
+          </p>
+          <div class="hero-actions" data-reveal data-delay="2">
+            <button class="btn-ghost" data-scroll="#works"><span>Смотреть услуги</span></button>
+            <button class="btn-solid" data-scroll="#booking"><span>Записаться</span></button> 
+          </div>
+        </div>
+
+        <div class="hero-facts" data-reveal="right" data-delay="1">
+          <div class="fact"><b data-count="20">0</b><span>лет практики стилиста</span></div>
+          <div class="fact"><b data-count="4" data-suffix="+">0</b><span>академии: London · Almaty</span></div>
+          <div class="fact"><b>Yclients</b><span>онлайн-запись 24/7</span></div>
+        </div>
+      </div>
+
+      <!-- большая площадь под фото студии + инфо поверх -->
+      <div class="hero-photo" data-reveal="scale" data-delay="1">
+
+        <div class="overlay">
+          <div>
+            <p class="oh-title">Интерьер студии Amber</p>
+            <p>Свет, тёплое дерево и панорама реки. Атмосфера тихого люкса в самом сердце Рыбной деревни.</p>
+          </div>
+          <span class="loc">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M12 21s-7-6.3-7-11a7 7 0 1 1 14 0c0 4.7-7 11-7 11Z" />
+              <circle cx="12" cy="10" r="2.5" />
+            </svg>
+            ул. Октябрьская, Рыбная деревня
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ О НАС ============ -->
+    <section class="section container" id="about">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="eyebrow" data-reveal>О студии</span>
+          <h2 class="section-title about-title" data-reveal>Тихий&nbsp;люкс<br><em>для ваших волос</em></h2>
+          <p class="lead about-lede" data-reveal data-delay="1">
+            Amber Beauty — камерная студия премиум-класса на территории отеля Kaiserhof.
+            Мы работаем с волосами как с материалом высокой моды: точная форма, живой цвет
+            и уход, который сохраняется неделями.
+          </p>
+          <div class="readmore" id="aboutMore" data-reveal data-delay="1">
+            <p>
+              Каждый визит — это индивидуальная диагностика, подбор ухода и работа только
+              профессиональными материалами. Мы не торопим: одна гостья — один мастер — одно
+              безупречное превращение.
+            </p>
+            <div class="rm-extra" id="rmExtra">
+              <p>
+                Студия расположена в историческом квартале Рыбной деревни с видом на
+                Кафедральный собор — это часть нашего сервиса: вы отдыхаете, пока мы работаем.
+                Здесь ценят время, приватность и результат, за который не стыдно ни на одном
+                мероприятии сезона.
+              </p>
+            </div>
+          </div>
+          <button class="readmore-toggle" id="aboutToggle" aria-expanded="false">
+            <span>Читать далее</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+          </button>
+
+          <div class="merits" data-reveal data-delay="2">
+            <span class="merit"><b>Обучение</b> в Toni&Guy · London</span>
+            <span class="merit"><b>Материалы</b> премиум-брендов</span>
+            <span class="merit"><b>Приватность</b> один мастер — одна гостья</span>
+          </div>
+        </div>
+
+        <div class="stats" data-reveal="right">
+          <div class="stat-card">
+            <div class="num" data-count="20"><span>0</span></div>
+            <div class="cap">лет опыта</div>
+          </div>
+          <div class="stat-card">
+            <div class="num" data-count="5" data-suffix="+"><span>0</span></div>
+            <div class="cap">мировых академий</div>
+          </div>
+          <div class="stat-card">
+            <div class="num" data-count="1500" data-suffix="+"><span>0</span></div>
+            <div class="cap">довольных гостей</div>
+          </div>
+          <div class="stat-card">
+            <div class="num" data-count="100" data-suffix="%"><span>0</span></div>
+            <div class="cap">ручная работа</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ РАБОТЫ ============ -->
+    <section class="section container" id="works">
+      <div style="text-align:center; margin-bottom:clamp(40px,6vw,72px)">
+        <span class="eyebrow" data-reveal style="justify-content:center">Портфолио</span>
+        <h2 class="section-title" data-reveal>Избранные <em>работы</em></h2>
+        <p class="lead" data-reveal data-delay="1" style="margin-inline:auto; text-align:center">
+          Наведите на карточку — она приблизится, а под ней раскроется описание работы.
+        </p>
+      </div>
+
+      <!-- проект 1 -->
+      <section>
+        <!-- проект 1 -->
+        <article class="work" data-reveal>
+          <div class="work-media" data-tap-info>
+            <img src="assets/1.jpg" alt="" class="zoom">
+
+            <div class="info">
+              <span class="tag">Окрашивание + укладка</span>
+              <h4>Укладка с покраской</h4>
+              <p>Мягкое тонирование в тёплый беж и объёмная укладка на средние волосы. Живой блеск, естественная форма.
+              </p>
+            </div>
+          </div>
+          <div class="work-copy" data-reveal="right" data-delay="1">
+            <div class="num-lg">01 / ПРОЕКТ</div>
+            <h3>Тёплый беж и мягкий объём</h3>
+            <p>Пример комплексной работы: диагностика, тонирование в тон и финишная укладка.</p>
+            <div class="chips"><span>Тонирование</span><span>Уход</span><span>Укладка феном</span></div>
+          </div>
+        </article>
+
+        <!-- проект 2 -->
+        <article class="work reverse" data-reveal>
+          <div class="work-media" data-tap-info>
+            <!-- Фотография на весь блок -->
+            <img src="assets/2.jpg" alt="" class="zoom">
+
+            <div class="info">
+              <span class="tag">Airtouch</span>
+              <h4>Сложное окрашивание Airtouch</h4>
+              <p>Многоуровневая растяжка цвета с плавными переходами. Естественное сияние без резких границ.</p>
+            </div>
+          </div>
+          <div class="work-copy" data-reveal="left" data-delay="1">
+            <div class="num-lg">02 / ПРОЕКТ</div>
+            <h3>Airtouch с плавным переходом</h3>
+            <p>Техника, требующая опыта и терпения.</p>
+            <div class="chips"><span>Airtouch</span><span>Осветление</span><span>Тонирование</span></div>
+          </div>
+        </article>
+
+        <!-- проект 3 -->
+        <article class="work" data-reveal>
+          <div class="work-media" data-tap-info>
+            <!-- Фотография на весь блок -->
+            <img src="assets/3.jpg" alt="" class="zoom">
+
+            <div class="info">
+              <span class="tag">Стрижка + стайлинг</span>
+              <h4>Коктейльная укладка</h4>
+              <p>Вечерний образ: чистая форма стрижки и гладкая коктейльная укладка с термозащитой.</p>
+            </div>
+          </div>
+          <div class="work-copy" data-reveal="right" data-delay="1">
+            <div class="num-lg">03 / ПРОЕКТ</div>
+            <h3>Вечерний коктейльный образ</h3>
+            <p>Для особого случая.</p>
+            <div class="chips"><span>Стрижка</span><span>Укладка</span><span>Термозащита</span></div>
+          </div>
+        </article>
+      </section>
+    </section>
+
+    <!-- ============ УСЛУГИ ============ -->
+    <section class="section container" id="services">
+      <div style="text-align:center; margin-bottom:clamp(40px,6vw,64px)">
+        <span class="eyebrow" data-reveal style="justify-content:center">Прайс</span>
+        <h2 class="section-title" data-reveal>Услуги <em>и цены</em></h2>
+        <p class="lead" data-reveal data-delay="1" style="margin-inline:auto; text-align:center">
+          Наведите на карточку (или коснитесь на телефоне), чтобы увидеть подробности услуги.
+        </p>
+      </div>
+
+      <div class="services-grid" id="servicesGrid" data-reveal>
+        <!-- карточки услуг рендерятся из JS-массива SERVICES (легко добавить новую) -->
+      </div>
+
+      <p class="s-note" data-reveal>
+        Точную стоимость по вашей длине и задаче подскажет мастер —
+        <a href="#booking" data-scroll="#booking">запишитесь на консультацию</a>.
+      </p>
+    </section>
+
+
+    <!-- ============ МАСТЕРА ============ -->
+    <section class="section container" id="masters">
+      <div class="master">
+        <div class="master-copy">
+          <span class="eyebrow" data-reveal>Мастер</span>
+          <h2 data-reveal>Ксения Сердюкова</h2>
+          <p class="sign" data-reveal data-delay="1">парикмахер-стилист · с 2005 года</p>
+          <p data-reveal data-delay="1">
+            Стилист с большим багажом опыта и обширной базой клиентов. За плечами — обучение
+            в ведущих мировых академиях и работа в салонах Лондона, Москвы, Алматы и Калининграда.
+          </p>
+          <ul class="timeline" data-reveal data-delay="2">
+            <li><span class="yr">2005</span> · <span class="ev">Обучение в академии Toni&Guy, Лондон</span></li>
+            <li><span class="yr">2005–2007</span> · <span class="ev">Салон Toni&Guy, Алматы (Казахстан)</span></li>
+            <li><span class="yr">2007–2010</span> · <span class="ev">Салон Toni&Guy, Москва</span></li>
+            <li><span class="yr">2010</span> · <span class="ev">Академия Vidal Sassoon</span></li>
+            <li><span class="yr">2010–2015</span> · <span class="ev">Салон «Персона», Москва</span></li>
+            <li><span class="yr">2010-ые</span> · <span class="ev">Академии L’Oréal и Wella, Лондон</span></li>
+            <li><span class="yr">2021–2026</span> · <span class="ev">Управление и работа стилистом, салон «Сириус»,
+                Калининград</span></li>
+          </ul>
+        </div>
+
+        <div class="master-photo-wrap" data-reveal="right">
+          <span class="frame-gem" aria-hidden="true"></span>
+          <div class="master-photo" data-tap-info tabindex="0" role="group"
+            aria-label="Ксения Сердюкова — показать контакты мастера">
+
+            <img src="assets/Kseniya.jpg" alt="Ксения" class="master-img">
+
+            <div class="m-name"><b>Ксения</b><span>Founder · Stylist</span></div>
+
+            <div class="m-contacts">
+              <p>Связаться с мастером</p>
+              <div class="links">
+                <a href="https://t.me/Ksela81" aria-label="Telegram Ксении">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M21.9 4.3 18.6 20c-.24 1.1-.9 1.37-1.82.85l-5.03-3.7-2.43 2.34c-.27.27-.5.5-1 .5l.36-5.1L18 6.15c.4-.36-.09-.56-.62-.2L6.9 12.9l-4.95-1.55c-1.08-.34-1.1-1.08.23-1.6L20.5 2.77c.9-.33 1.68.2 1.4 1.53Z" />
+                  </svg>
+                  Telegram
+                </a>
+                <a href="#" aria-label="Instagram Ксении">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                  </svg>
+                  Instagram
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ЗАПИСЬ ============ -->
+    <section class="section container" id="booking">
+      <div style="text-align:center; margin-bottom:clamp(36px,5vw,60px)">
+        <span class="eyebrow" data-reveal style="justify-content:center">Контакты</span>
+        <h2 class="section-title" data-reveal>Запись <em>в студию</em></h2>
+      </div>
+
+      <div class="booking-grid">
+        <!-- левая панель: мессенджеры + форма + Yclients -->
+        <div class="booking-panel" data-reveal="left">
+          <h3>Запишитесь онлайн</h3>
+          <p class="sub">Выберите удобный способ связи или оставьте заявку — перезвоним для консультации.</p>
+
+          <a class="btn-yclients" href="#" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="4" width="18" height="17" rx="3" />
+              <path d="M3 9h18M8 2v4M16 2v4" />
+              <path d="m9 15 2 2 4-4" />
+            </svg>
+            <span>Онлайн-запись · Yclients</span>
+          </a>
+
+          <div class="msgs">
+            <button type="button" class="msg" id="openCall">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path
+                  d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z" />
+              </svg>
+              <span>Позвонить</span>
+            </button>
+
+            <!-- Всплывающее окно -->
+            <div class="call-modal" id="callModal" inert>
+              <div class="call-modal-backdrop" data-close-call></div>
+              <div class="call-modal-card" role="dialog" aria-modal="true" aria-labelledby="callTitle">
+                <button class="call-modal-close" type="button" data-close-call aria-label="Закрыть">×</button>
+
+                <div class="call-modal-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                    <path
+                      d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2Z" />
+                  </svg>
+                </div>
+
+                <h3 id="callTitle">Мастер</h3>
+                <p class="call-name">Ксения Сердюкова</p>
+
+                <a href="tel:+79778857878" class="call-number">+7 (977) 885-78-78</a>
+
+                <a href="tel:+79778857878" class="btn-call">Позвонить</a>
+              </div>
+            </div>
+
+            <a class="msg" href="https://t.me/Ksela81" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M21.9 4.3 18.6 20c-.24 1.1-.9 1.37-1.82.85l-5.03-3.7-2.43 2.34c-.27.27-.5.5-1 .5l.36-5.1L18 6.15c.4-.36-.09-.56-.62-.2L6.9 12.9l-4.95-1.55c-1.08-.34-1.1-1.08.23-1.6L20.5 2.77c.9-.33 1.68.2 1.4 1.53Z" />
+              </svg>
+              <span>Telegram</span>
+            </a>
+            <a class="msg" href="https://wa.me/79778857878" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .3-3.4-.7-2.9-1.2-4.7-4.1-4.8-4.3-.2-.2-1.2-1.6-1.2-3s.7-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6c-.2.2-.4.4-.2.7.2.3.9 1.4 1.9 2.3 1.3 1.1 2.3 1.5 2.6 1.6.3.2.5.1.7-.1l.7-.9c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.4.1.1.1.8-.2 1.4Z" />
+              </svg>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- форма: без БД, отправка на почту (заглушка) -->
+          <form class="form" id="bookingForm" novalidate>
+
+          </form>
+        </div>
+
+        <!-- правая панель: карта в рамке -->
+        <div class="map-panel" data-reveal="right">
+          <div class="map-head">
+            <div>
+              <b>Рыбная деревня</b><br>
+              <span>ул. Октябрьская, Калининград · отель Kaiserhof</span>
+            </div>
+            <span class="loc" style="border-color:var(--line); color:var(--muted); background:var(--cream)">+7 977 885
+              78 78</span>
+          </div>
+          <div class="map-frame">
+            <!-- OpenStreetMap без API-ключа; при офлайне покажется подложка -->
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3Af8039f49aff4be8609127c90347afd0f4aa5f5708362cc69f16b3f904d62cbba&amp;source=constructor"
+              width="724" height="400" frameborder="0"></iframe>
+            <div class="map-fallback">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 21s-7-6.3-7-11a7 7 0 1 1 14 0c0 4.7-7 11-7 11Z" />
+                <circle cx="12" cy="10" r="2.5" />
+              </svg>
+              <b style="font-family:var(--font-display); font-size:1.3rem; color:var(--espresso-2)">Рыбная деревня</b>
+              <span style="color:var(--muted); font-size:.86rem">ул. Октябрьская, Калининград</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ ФУТЕР ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand" data-reveal>
+          <div class="fb-name">Amber Beauty</div>
+          <p>Премиум-студия ухода за волосами в Рыбной деревне, Калининград. Тихий люкс, авторский подход, безупречный
+            результат.</p>
+        </div>
+        <div class="footer-col" data-reveal data-delay="1">
+          <h4>Навигация</h4>
+          <a href="#about" data-scroll="#about">О нас</a>
+          <a href="#works" data-scroll="#works">Работы</a>
+          <a href="#services" data-scroll="#services">Услуги</a>
+          <a href="#masters" data-scroll="#masters">Мастера</a>
+          <a href="#booking" data-scroll="#booking">Запись</a>
+        </div>
+        <div class="footer-col" data-reveal data-delay="2">
+          <h4>Контакты</h4>
+          <a href="tel:+79778857878">+7 977 885 78 78</a>
+          <a href="https://t.me/Ksela81" target="_blank" rel="noopener">Telegram</a>
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+          <p>ул. Октябрьская, Калининград</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Amber Beauty. Автор сайта — Штумпф Роман Дмитриевич.</span>
+        <a href="privacy.html">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ МОДАЛКА ЗАПИСИ ============ -->
+  <div class="modal" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" inert>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" tabindex="-1">
+      <button class="modal-close" data-close aria-label="Закрыть">×</button>
+      <span class="m-eyebrow">Amber Beauty</span>
+      <h3 id="modalTitle">Записаться</h3>
+      <p>Выберите онлайн-запись через Yclients или перейдите к форме — мы перезвоним для консультации.</p>
+      <a class="btn-yclients" href="#" target="_blank" rel="noopener" style="margin-top:20px">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <rect x="3" y="4" width="18" height="17" rx="3" />
+          <path d="M3 9h18M8 2v4M16 2v4" />
+          <path d="m9 15 2 2 4-4" />
+        </svg>
+        <span>Онлайн-запись · Yclients</span>
+      </a>
+      <button class="btn-ghost" data-scroll="#booking" data-close
+        style="margin-top:12px; width:100%; justify-content:center">
+        <span>Перейти к форме и карте</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- КНОПКА НАВЕРХ -->
+  <button class="to-top" id="toTop" aria-label="Наверх">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="m6 15 6-6 6 6" />
+    </svg>
+  </button>
+
+  <script src="js.js"></script>
+
+</body>
+
+</html>
